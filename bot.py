@@ -312,6 +312,10 @@ async def area(ctx, arg1: int, arg2: int, shape='0'):
             await ctx.send(embed=embed)
     
 
+@client.command()
+async def hellp(ctx):
+    await ctx.send('wrld')
+
 if __name__ == '__main__':
     import config
     client.run(config.token)

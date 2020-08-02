@@ -16,7 +16,7 @@ def get_prefix(client, message):
 
 client = commands.Bot(command_prefix=get_prefix)
 client.remove_command('help')
-token = os.environ.get("DISCORD_BOT_SECRET")
+token = os.environ.get("token")
 
 
 @client.event
@@ -312,4 +312,4 @@ async def area(ctx, arg1: int, arg2: int, shape='0'):
             await ctx.send(embed=embed)
     
 
-client.run('NzM4OTcxNDkxMjg2Mzg0Njcw.XyTq1A.qyq7oYWDP9HSlgVnUT-fUdZeHUQ')
+client.run(token)

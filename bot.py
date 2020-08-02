@@ -312,4 +312,6 @@ async def area(ctx, arg1: int, arg2: int, shape='0'):
             await ctx.send(embed=embed)
     
 
-client.run(token)
+if __name__ == '__main__':
+    import config
+    client.run(config.token)
